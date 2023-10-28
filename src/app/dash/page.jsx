@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import {BsFillFileCheckFill} from 'react-icons/bs'
 import {FiLogOut} from 'react-icons/fi'
@@ -6,6 +8,8 @@ import {CgProfile} from 'react-icons/cg'
 import {GrDocumentText} from 'react-icons/gr'
 import {MdOutlineHealthAndSafety} from 'react-icons/md'
 import {LuSettings} from 'react-icons/lu'
+import Link from "next/link";
+
 
 export default function Dashboard() {
   return (
@@ -17,7 +21,9 @@ export default function Dashboard() {
         </div>
         <div className='ml-auto flex items-center'>
           <button className='flex items-center gap-2 bg-blue-500 text-lg font-bold hover:bg-blue-700 text-white py-4 px-11 rounded-lg '>
-            <BsFillFileCheckFill/> <div>Health Check</div>
+            <BsFillFileCheckFill/> <div><Link href="/dash/form">
+        SasthoSathi
+      </Link></div>
           </button>
           <button className='flex items-center gap-2 bg-red-500 text-lg hover:bg-red-700 text-white font-bold py-4 px-11 ml-4 rounded-lg'>
             <FiLogOut/> <div>Logout</div>
