@@ -66,7 +66,7 @@ const HealthProblemForm = () => {
 
       {/* Display the API response */}
       {apiResponse && (
-        <div className="mt-4 bg-gray-100 p-4 rounded-lg">
+        <div className="mt-8 bg-gray-100 p-4 rounded-lg">
           <h3 className="text-xl font-semibold mb-2">API Response:</h3>
           <pre className="text-gray-800 whitespace-pre-wrap">{JSON.stringify(apiResponse, null, 2)}</pre>
         </div>

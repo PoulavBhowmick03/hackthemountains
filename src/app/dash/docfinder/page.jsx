@@ -242,8 +242,124 @@ const stores = {
           distance: 0,
         },
       },
-      // Add more hospital data here
-    ],
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.310345, 22.586126],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Howrah General Hospital</a></strong><p> Rating: 4.7</p>',
+          name: "Howrah General Hospital",
+          address: "Dobson Road, Howrah, West Bengal",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.328131, 22.583961],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Sanjivani Hospital</a></strong><p> Rating: 4.5</p>',
+          name: "Sanjivani Hospital",
+          address: "Shibpur, Howrah, West Bengal",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.353554, 22.574110],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Howrah City Hospital</a></strong><p> Rating: 4.6</p>',
+          name: "Howrah City Hospital",
+          address: "Nabagram, Howrah, West Bengal",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.368355, 22.581527],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Kolkata Medical Center</a></strong><p> Rating: 4.6</p>',
+          name: "Kolkata Medical Center",
+          address: "Shalimar, Howrah, West Bengal",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.365188, 22.527843],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Rabindra Sadan Hospital</a></strong><p> Rating: 4.8</p>',
+          name: "Rabindra Sadan Hospital",
+          address: "Maidan, Kolkata",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.347476, 22.550458],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Kolkata Health Institute</a></strong><p> Rating: 4.7</p>',
+          name: "Kolkata Health Institute",
+          address: "Park Street, Kolkata",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.359704, 22.525835],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Kolkata Care Hospital</a></strong><p> Rating: 4.6</p>',
+          name: "Kolkata Care Hospital",
+          address: "Bhowanipore, Kolkata",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.370553, 22.561805],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Medical Square Hospital</a></strong><p> Rating: 4.7</p>',
+          name: "Medical Square Hospital",
+          address: "Chowringhee, Kolkata",
+          distance: 0,
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [88.393588, 22.619337],
+        },
+        properties: {
+          description: '<strong><a href="#" target="_blank">Salt Lake Hospital</a></strong><p> Rating: 4.5</p>',
+          name: "Salt Lake Hospital",
+          address: "Salt Lake, Kolkata",
+          distance: 0,
+        },
+      },
+        ],
 };
 
 const Explore = () => {
