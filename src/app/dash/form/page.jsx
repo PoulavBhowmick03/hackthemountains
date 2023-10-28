@@ -29,12 +29,7 @@ const HealthProblemForm = () => {
 
       if (response.ok) {
         const result = await response.json();
-        // Modify the data
-        const modifiedData = result.map((item) => ({
-          Disease: item.label,
-          Probability: item.score,
-        }));
-        setApiResponse(modifiedData);
+        setApiResponse(result);
       } else {
         console.error('API request failed:', response.status, response.statusText);
       }
@@ -57,7 +52,7 @@ const HealthProblemForm = () => {
             name="healthProblem"
             value={healthProblem}
             onChange={(e) => setHealthProblem(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-400"
+            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-400 text-black"
             placeholder="Enter your current health problem"
           />
         </div>
@@ -69,16 +64,11 @@ const HealthProblemForm = () => {
         </button>
       </form>
 
-      {/* Display the modified API response */}
+      {/* Display the API response */}
       {apiResponse && (
         <div className="mt-4 bg-gray-100 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold mb-2">Modified API Response:</h3>
-          {apiResponse.map((item, index) => (
-            <div key={index} className="mb-4">
-              <div className="text-gray-800 font-semibold">Disease: {item.Disease}</div>
-              <div className="text-gray-800">Probability: {item.Probability}</div>
-            </div>
-          ))}
+          <h3 className="text-xl font-semibold mb-2">API Response:</h3>
+          <pre className="text-gray-800 whitespace-pre-wrap">{JSON.stringify(apiResponse, null, 2)}</pre>
         </div>
       )}
     </div>
