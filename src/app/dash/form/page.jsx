@@ -1,15 +1,46 @@
-
 "use client";
 
 import React, { useState } from 'react';
 
 const HealthProblemForm = () => {
   const [healthProblem, setHealthProblem] = useState('');
+  const [apiResponse, setApiResponse] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can handle the form submission here, e.g., send the data to a server or perform an action.
-    console.log('Current Health Problem:', healthProblem);
+    // Create an object with the form data
+    const formData = {
+      inputs: healthProblem, // Assuming healthProblem is the input
+    };
+
+    // Define the API endpoint and your API key
+    const apiUrl = 'https://api-inference.huggingface.co/models/noobmodeler099/test';
+    const apiKey = 'Bearer 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';
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          Authorization: apiKey,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        // Modify the data
+        const modifiedData = result.map((item) => ({
+          Disease: item.label,
+          Probability: item.score,
+        }));
+        setApiResponse(modifiedData);
+      } else {
+        console.error('API request failed:', response.status, response.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
@@ -37,6 +68,19 @@ const HealthProblemForm = () => {
           Submit
         </button>
       </form>
+
+      {/* Display the modified API response */}
+      {apiResponse && (
+        <div className="mt-4 bg-gray-100 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2">Modified API Response:</h3>
+          {apiResponse.map((item, index) => (
+            <div key={index} className="mb-4">
+              <div className="text-gray-800 font-semibold">Disease: {item.Disease}</div>
+              <div className="text-gray-800">Probability: {item.Probability}</div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
