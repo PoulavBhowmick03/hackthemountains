@@ -17,7 +17,7 @@ export default function Home() {
             Get your health checked using our Machine Learning model and get to
             know your probable issue
           </p>
-          <Button url="/about" text="How do we work" />
+          <Button url="/portfolio" text="How do we work" />
         </div>
         <div className="flex-1">
           <Image src={Hero} alt="" className=" w-11/12" />
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className=" h-56 flex flex-col justify-center items-center">
   <div className="text-7xl font-sans font-semibold font-inter">
-    How चिकित्सालय works
+    How Chikitsalay works
   </div>
 </div>
 
