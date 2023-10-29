@@ -19,8 +19,9 @@ Chikitsalay allows users to input their symptoms, and based on a sophisticated a
 **Symptom-Based Disease Prediction:**
 
 -   Visit the Chikitsalay website at [chikitsalay.co](https://chikitsalay.co).
--
--   Click on the "Health Checkup"  on the homepage.
+-   Sign-Up or Login using your email id.
+-   Go to the "Dashboard" on the top right of the navigation bar.
+-   Click on the "Health Checkup"  on the Dashboard.
 -   Enter the symptoms you are experiencing in the provided text fields.
 -   Click the "Predict"  button.
 -   Chikitsalay will provide you with a list of probable diseases based on your symptoms and also their probability.
@@ -30,10 +31,12 @@ Chikitsalay allows users to input their symptoms, and based on a sophisticated a
 Chikitsalay's map feature uses your location data to display nearby health centers, hospitals, clinics, and pharmacies. This makes it easy for you to find the closest healthcare facilities in case you need immediate medical attention or advice.
 ** Health Centers Nearby Map:**
 
--  Visit the Chikitsalay website at [chikitsalay.co](https://chikitsalay.co).
--   Click on the "Health Centers Nearby"  button on the homepage.
+-   Visit the Chikitsalay website at [chikitsalay.co](https://chikitsalay.co).
+-   Sign-Up or Login using your email id.
+-   Go to the "Dashboard" on the top right of the navigation bar.
+-   Click on the "Health Centers Nearby"  on the Dashboard.
 -   Chikitsalay will request access to your location. Allow the website to access your location data.
--   The map will display health centers, hospitals, clinics.
+-   The map will display all the nearby health centers, hospitals, clinics and also the distance from your location for your convenience.
  
 ## Working Flowchart Diagram
 ![image](https://github.com/PoulavBhowmick03/hackthemountains/assets/76868488/2872d6bc-5f22-4799-9b19-881c4e676f89)
