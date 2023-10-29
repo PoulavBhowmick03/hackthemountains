@@ -39,3 +39,19 @@
   font-weight: 300;
   text-align: justify;
 }
+
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom :-30px; 
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom :-30px; 
+}
+
