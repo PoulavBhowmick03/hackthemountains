@@ -29,7 +29,7 @@ Chikitsalay allows users to input their symptoms, and based on a sophisticated a
 ### 2. Nearby Health Centers Map
 
 Chikitsalay's map feature uses your location data to display nearby health centers, hospitals, clinics, and pharmacies. This makes it easy for you to find the closest healthcare facilities in case you need immediate medical attention or advice.
-** Health Centers Nearby Map:**
+Health Centers Nearby Map:
 
 -   Visit the Chikitsalay website at [chikitsalay.co](https://chikitsalay.co).
 -   Sign-Up or Login using your email id.
