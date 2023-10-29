@@ -4,6 +4,7 @@ import Button from "@/components/Button/Button";
 import Healthcheck from 'public/healthcheck.png'
 import Map from '/public/mapview.png'
 import LoginImage from '/public/login.png'
+import Dash from '/public/dash.png'
 
 export default function Home() {
   return (
@@ -30,9 +31,9 @@ export default function Home() {
 </div>
 
       <div className="flex justify-between items-center">
-  <div className="mx-32 text-2xl">On visiting the page,<br/> user can signup or login with google</div>
+  <div className="mx-32 text-2xl">You can access your dashboard,<br/> after logging in where you can<br/> have various options to access our<br/> features</div>
   <div className="flex-1">
-    <Image src={LoginImage} alt="" className="w-full h-96 object-contain" />
+    <Image src={Dash} alt="" className="w-full h-96 object-contain" />
   </div>
 </div>
 <div className="flex justify-between items-center">
