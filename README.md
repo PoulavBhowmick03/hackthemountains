@@ -19,10 +19,11 @@ Chikitsalay allows users to input their symptoms, and based on a sophisticated a
 **Symptom-Based Disease Prediction:**
 
 -   Visit the Chikitsalay website at [chikitsalay.co](https://chikitsalay.co).
--   Click on the "Health Checkup" or similar button on the homepage.
+-
+-   Click on the "Health Checkup"  on the homepage.
 -   Enter the symptoms you are experiencing in the provided text fields.
 -   Click the "Predict"  button.
--   Chikitsalay will provide you with a list of probable diseases based on your symptoms.
+-   Chikitsalay will provide you with a list of probable diseases based on your symptoms and also their probability.
 
 ### 2. Nearby Health Centers Map
 
