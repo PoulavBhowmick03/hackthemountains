@@ -1,26 +1,42 @@
-import mongoose from "mongoose";
-
-const { Schema } = mongoose;
+import mongoose, { Schema, models } from "mongoose";
 
 const userSchema = new Schema(
   {
-    name: {
-      type: String,
-      unique: true,
-      required: true,
-    },
     email: {
       type: String,
-      unique: true,
       required: true,
     },
-    password: {
+    name: {
       type: String,
       required: true,
+    },
+    phoneNo: {
+      type: String,
+    },
+    bloodGroup: {
+      type: String,
+    },
+    age: {
+      type: Number,
+    },
+    allergy: {
+      type: String,
+    },
+    adahar: {
+      type: String, // Assuming it's a string like Aadhaar card number
+    },
+    description: {
+      type: String, // You can adjust the data type as needed
+    },
+    gender: {
+      type: String, // Assuming gender is a string (e.g., "male," "female," "other")
+    },
+    prescription: {
+      type: String, // You can adjust the data type as needed
     },
   },
   { timestamps: true }
 );
 
-//If the User collection does not exist create a new one.
-export default mongoose.models.User || mongoose.model("User", userSchema);
+const User = models.User || mongoose.model("User", userSchema);
+export default User;

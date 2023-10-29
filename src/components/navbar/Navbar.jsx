@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        SasthoSathi
+        Chikitsalay
       </Link>
       <div className={styles.links}>
         
