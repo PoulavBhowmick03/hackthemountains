@@ -1,4 +1,4 @@
-# Cashikitsalay - Your Health Companion
+# Chikitsalay - Your Health Companion
 
 Chikitsalay is a user-friendly website designed to help you identify potential diseases based on the symptoms you provide. In addition to providing disease predictions, Chikitsalay also offers a map feature that locates nearby health centers and hospitals, making it a one-stop solution for your health needs. This README file provides an overview of Chikitsalay and instructions on how to use its features effectively.
 
