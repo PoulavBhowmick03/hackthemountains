@@ -8,7 +8,7 @@ import LoginImage from '/public/login.png'
 export default function Home() {
   return (
     <div>
-      <div className="flex items-center gap-20 m-20">
+      <div className="flex items-center gap-20 mx-20 my-10">
         <div className="flex-1 flex flex-col gap-9">
           <h1 className="text-7xl bg-gradient-to-b from-blue-900 via-blue-500 to-white text-transparent bg-clip-text font-bold ">
             Your health checkup at the palm of your hand
@@ -30,7 +30,7 @@ export default function Home() {
 </div>
 
       <div className="flex justify-between items-center">
-  <div className="mx-40">On visiting the page,<br/> user can signup or login with google</div>
+  <div className="mx-32 text-2xl">On visiting the page,<br/> user can signup or login with google</div>
   <div className="flex-1">
     <Image src={Healthcheck} alt="" className="w-full h-96 object-contain" />
   </div>
@@ -39,10 +39,10 @@ export default function Home() {
   <div className="flex-1">
     <Image src={Map} alt="" className="w-full h-96 object-contain" />
   </div>
-  <div className="mx-40">They can go to their dashboard<br/> and go to health checkup, enter<br/> their symptoms and see the<br/> probable health issues</div>
+  <div className="mx-32 text-2xl">They can go to their dashboard<br/> and go to health checkup, enter<br/> their symptoms and see the<br/> probable health issues</div>
 </div>
 <div className="flex justify-between items-center">
-  <div className="mx-40">Based on your location,<br/> our platform also shows<br/> you nearby health centres<br/> on the map</div>
+  <div className="mx-32 text-2xl">Based on your location<br/> our platform also shows<br/> you nearby health centres<br/> on the map</div>
   <div className="flex-1">
     <Image src={LoginImage} alt="" className="w-full h-96 object-contain" />
   </div>
