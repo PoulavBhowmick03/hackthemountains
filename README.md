@@ -6,8 +6,8 @@
 
 ## Model description
 
-This model is trained on a Symptoms to Disease [Dataset](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset). 
-The model takes in a symptom prompt and classifies the most probable disease from it. 
+####This model is trained on a Symptoms to Disease [Dataset](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset). 
+####The model takes in a symptom prompt and classifies the most probable disease from it. 
 
 
 ### Training results
