@@ -31,7 +31,7 @@ const HealthProblemForm = () => {
 
       if (response.ok) {
         const result = await response.json();
-        console.log('API Response:', result); // Log the response
+        console.log('Label:', result[0][1].label, 'Score:', result[0][1].score); // Log the response
 
         setApiResponse(result);
       } else {

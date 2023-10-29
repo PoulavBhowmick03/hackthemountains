@@ -10,9 +10,14 @@ import {LuSettings} from 'react-icons/lu'
 import Link from "next/link";
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {TbCheckupList} from 'react-icons/tb'
+import {Link as Limk} from 'next/link';
+
 
 
 export default function Dashboard() {
+
+
+
   return (
     <div className='px-16 py-8 overflow-hidden h-screen'>
       <div className='flex'>
