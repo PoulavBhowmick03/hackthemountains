@@ -25,26 +25,26 @@ export default function Home() {
       </div>
       <div className=" h-56 flex flex-col justify-center items-center">
   <div className="text-7xl font-sans font-semibold font-inter">
-    How Chikitsalay works
+    How चिकित्सालय works
   </div>
 </div>
 
       <div className="flex justify-between items-center">
   <div className="mx-32 text-2xl">On visiting the page,<br/> user can signup or login with google</div>
   <div className="flex-1">
-    <Image src={Healthcheck} alt="" className="w-full h-96 object-contain" />
+    <Image src={LoginImage} alt="" className="w-full h-96 object-contain" />
   </div>
 </div>
 <div className="flex justify-between items-center">
   <div className="flex-1">
-    <Image src={Map} alt="" className="w-full h-96 object-contain" />
+    <Image src={Healthcheck} alt="" className="w-full h-96 object-contain" />
   </div>
   <div className="mx-32 text-2xl">They can go to their dashboard<br/> and go to health checkup, enter<br/> their symptoms and see the<br/> probable health issues</div>
 </div>
 <div className="flex justify-between items-center">
   <div className="mx-32 text-2xl">Based on your location<br/> our platform also shows<br/> you nearby health centres<br/> on the map</div>
   <div className="flex-1">
-    <Image src={LoginImage} alt="" className="w-full h-96 object-contain" />
+    <Image src={Map} alt="" className="w-full h-96 object-contain" />
   </div>
 </div>
 

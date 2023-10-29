@@ -97,7 +97,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className="text-gray-600 hover:text-gray-800 cursor-pointer">
+              <a className="text-gray-600 hover:text-gray-800 cursor-pointer" href='https://github.com/PoulavBhowmick03/hackthemountains'>
                 GitHub
               </a>
             </li>
