@@ -17,7 +17,21 @@ import styles from "../../components/navbar/navbar.module.css";
 
 
 export default function Dashboard() {
+  const { data: session } = useSession();
 
+  const handleSignOut = async () => {
+    const response = await signOut();
+
+    if (response.ok) {
+      // Sign-out was successful
+      console.log('User signed out');
+      // Redirect to the home page
+      window.location.href = '/';
+    } else {
+      // Sign-out failed
+      console.error('Sign-out failed:', response.error);
+    }
+  };
 
 
   return (
@@ -33,7 +47,7 @@ export default function Dashboard() {
         Health Checkup
       </Link></div>
           </button>
-          <button className={`flex items-center gap-2 bg-red-500 text-lg hover:bg-red-700 text-white font-bold py-4 px-11 ml-4 rounded-lg ${styles.logout}`} onClick={signOut}>
+          <button className={`flex items-center gap-2 bg-red-500 text-lg hover:bg-red-700 text-white font-bold py-4 px-11 ml-4 rounded-lg ${styles.logout}`} onClick={handleSignOut}>
             <FiLogOut/> <div>Logout</div>
           </button>
         </div>
