@@ -22,7 +22,7 @@ export default function Dashboard() {
         <div className='ml-auto flex items-center'>
           <button className='flex items-center gap-2 bg-blue-500 text-lg font-bold hover:bg-blue-700 text-white py-4 px-11 rounded-lg '>
             <BsFillFileCheckFill/> <div><Link href="/dash/form">
-        SasthoSathi
+        Health Checkup
       </Link></div>
           </button>
           <button className='flex items-center gap-2 bg-red-500 text-lg hover:bg-red-700 text-white font-bold py-4 px-11 ml-4 rounded-lg'>
