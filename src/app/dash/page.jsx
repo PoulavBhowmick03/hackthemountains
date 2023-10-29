@@ -11,6 +11,8 @@ import Link from "next/link";
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {TbCheckupList} from 'react-icons/tb'
 import {Link as Limk} from 'next/link';
+import { signOut, useSession } from "next-auth/react";
+import styles from "../../components/navbar/navbar.module.css";
 
 
 
@@ -31,7 +33,7 @@ export default function Dashboard() {
         Health Checkup
       </Link></div>
           </button>
-          <button className='flex items-center gap-2 bg-red-500 text-lg hover:bg-red-700 text-white font-bold py-4 px-11 ml-4 rounded-lg'>
+          <button className={`flex items-center gap-2 bg-red-500 text-lg hover:bg-red-700 text-white font-bold py-4 px-11 ml-4 rounded-lg ${styles.logout}`} onClick={signOut}>
             <FiLogOut/> <div>Logout</div>
           </button>
         </div>

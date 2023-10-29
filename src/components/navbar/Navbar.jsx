@@ -25,7 +25,7 @@ const links = [
   {
     id: 5,
     title: "Dashboard",
-    url: "/dash",
+    url: "/dashboard/login",
   },
 ];
 
@@ -44,11 +44,7 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        {session.status === "authenticated" && (
-          <button className={styles.logout} onClick={signOut}>
-            Logout
-          </button>
-        )}
+        
       </div>
     </div>
   );
