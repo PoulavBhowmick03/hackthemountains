@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Hero from "public/hero.png";
 import Button from "@/components/Button/Button";
+import Healthcheck from 'public/healthcheck.png'
+import Map from '/public/mapview.png'
+import LoginImage from '/public/login.png'
 
 export default function Home() {
   return (
@@ -22,26 +25,26 @@ export default function Home() {
       </div>
       <div className=" h-56 flex flex-col justify-center items-center">
   <div className="text-7xl font-sans font-semibold font-inter">
-    How SasthoSathi works
+    How Chikitsalay works
   </div>
 </div>
 
       <div className="flex justify-between items-center">
-  <div className="mx-40">Signup or Login<br />to our Platform</div>
+  <div className="mx-40">On visiting the page,<br/> user can signup or login with google</div>
   <div className="flex-1">
-    <Image src={Hero} alt="" className="w-full h-96 object-contain" />
+    <Image src={Healthcheck} alt="" className="w-full h-96 object-contain" />
   </div>
 </div>
 <div className="flex justify-between items-center">
   <div className="flex-1">
-    <Image src={Hero} alt="" className="w-full h-96 object-contain" />
+    <Image src={Map} alt="" className="w-full h-96 object-contain" />
   </div>
-  <div className="mx-40">Signup or Login<br />to our Platform</div>
+  <div className="mx-40">They can go to their dashboard<br/> and go to health checkup, enter<br/> their symptoms and see the<br/> probable health issues</div>
 </div>
 <div className="flex justify-between items-center">
-  <div className="mx-40">Signup or Login<br />to our Platform</div>
+  <div className="mx-40">Based on your location,<br/> our platform also shows<br/> you nearby health centres<br/> on the map</div>
   <div className="flex-1">
-    <Image src={Hero} alt="" className="w-full h-96 object-contain" />
+    <Image src={LoginImage} alt="" className="w-full h-96 object-contain" />
   </div>
 </div>
 
