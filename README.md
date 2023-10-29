@@ -1,5 +1,40 @@
-   # hackthemountains
+# Chikitsalay - Your Health Companion
 
+Chikitsalay is a user-friendly website designed to help you identify potential diseases based on the symptoms you provide. In addition to providing disease predictions, Chikitsalay also offers a map feature that locates nearby health centers and hospitals, making it a one-stop solution for your health needs. This README file provides an overview of Chikitsalay and instructions on how to use its features effectively.
+
+## Table of Contents
+
+-   Features
+-   Getting Started
+-   Usage
+-   Contributing
+-   License
+
+## Features
+
+### 1. Symptom-Based Disease Prediction
+
+Chikitsalay allows users to input their symptoms, and based on a sophisticated algorithm, it predicts the most probable diseases associated with those symptoms. This feature can provide valuable insights into your health and help you take appropriate actions.
+
+**Symptom-Based Disease Prediction:**
+
+-   Visit the Chikitsalay website at [chikitsalay.co](https://chikitsalay.co).
+-   Click on the "Health Checkup" or similar button on the homepage.
+-   Enter the symptoms you are experiencing in the provided text fields.
+-   Click the "Predict"  button.
+-   Chikitsalay will provide you with a list of probable diseases based on your symptoms.
+
+### 2. Nearby Health Centers Map
+
+Chikitsalay's map feature uses your location data to display nearby health centers, hospitals, clinics, and pharmacies. This makes it easy for you to find the closest healthcare facilities in case you need immediate medical attention or advice.
+** Health Centers Nearby Map:**
+
+-  Visit the Chikitsalay website at [chikitsalay.co](https://chikitsalay.co).
+-   Click on the "Health Centers Nearby"  button on the homepage.
+-   Chikitsalay will request access to your location. Allow the website to access your location data.
+-   The map will display health centers, hospitals, clinics.
+ 
+## Working Flowchart Diagram
 ![image](https://github.com/PoulavBhowmick03/hackthemountains/assets/76868488/2872d6bc-5f22-4799-9b19-881c4e676f89)
 
 
@@ -26,5 +61,6 @@
 - Transformers 4.28.1
 - TensorFlow 2.12.0
 - Tokenizers 0.13.3
+
 
 
