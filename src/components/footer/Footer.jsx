@@ -8,7 +8,7 @@ const Footer = () => {
   <footer className="text-gray-800 w-4/5 mx-auto inter md:pt-24">
     <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className="flex-grow flex flex-wrap -mb-10 md:mt-0 mt-10 md:text-left text-center">
-        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+        {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 className="font-medium text-gray-900 text-base mb-3">
             About
           </h2>
@@ -30,12 +30,11 @@ const Footer = () => {
             </li>
             <li>
               <a className="text-gray-600 hover:text-gray-800 cursor-pointer">
-                Roadmap
               </a>
             </li>
           </nav>
-        </div>
-        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+        </div> */}
+        {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 className="font-medium text-gray-900 text-base mb-3">
             Company
           </h2>
@@ -57,11 +56,10 @@ const Footer = () => {
             </li>
             <li>
               <a className="text-gray-600 hover:text-gray-800 cursor-pointer">
-                Roadmap
               </a>
             </li>
           </nav>
-        </div>
+        </div> */}
         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 className="font-medium text-gray-900 text-base mb-3">
             Contact
@@ -84,7 +82,6 @@ const Footer = () => {
             </li>
             <li>
               <a className="text-gray-600 hover:text-gray-800 cursor-pointer">
-                Roadmap
               </a>
             </li>
           </nav>
@@ -111,7 +108,6 @@ const Footer = () => {
             </li>
             <li>
               <a className="text-gray-600 hover:text-gray-800 cursor-pointer">
-                Roadmap
               </a>
             </li>
           </nav>
@@ -124,7 +120,6 @@ const Footer = () => {
     <div className="flex items-center mx-auto text-gray-600 container justify-center md:justify-between py-2">
       <div>
         <span className="font-normal">
-          © Copyright 2023, All Rights Reserved{' '}
         </span>
       </div>
       <a
@@ -133,7 +128,7 @@ const Footer = () => {
         rel="noopener noreferrer"
       >
         <span className="hover:underline focus-visible:underline">
-          Learn More
+
         </span>
       </a>
     </div>

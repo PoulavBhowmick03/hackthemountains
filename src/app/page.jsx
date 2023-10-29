@@ -17,7 +17,7 @@ export default function Home() {
             Get your health checked using our Machine Learning model and get to
             know your probable issue
           </p>
-          <Button url="/portfolio" text="How do we work" />
+          <Button url="/about" text="How do we work" />
         </div>
         <div className="flex-1">
           <Image src={Hero} alt="" className=" w-11/12" />
