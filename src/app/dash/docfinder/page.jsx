@@ -444,40 +444,40 @@ const Explore = () => {
             Nearby Stalls
           </div>
           {stores.features.map((store) => (
-            <div className="bg-white p-5 rounded-lg w-full h-fit border-slate-400 border-opacity-50 mb-2 shadow-md">
-              <div className="flex justify-between">
-                <span
-                  className="font-semibold text-lg cursor-pointer hover:text-black text-slate-600"
-                  onClick={() =>
-                    onSelect({
-                      longitude: store.geometry.coordinates[0],
-                      latitude: store.geometry.coordinates[1],
-                    })
-                  }
-                >
-                  {store.properties.name}
-                </span>
-                <div className="font-semibold flex flex-row items-center text-[#24963F] hover:scale-105">
-                  <span className="m-1">4.5</span>
-                  <AiFillStar className="" />
-                </div>
-              </div>
-              <div className="text-base text-slate-500">
-                {store.properties.address}
-              </div>
-              <div className="text-sm font-medium text-slate-500">
-                {distances[store.properties.name]} km away from your location
-              </div>
-              <span className="flex">
-                <a className="text-blue-600 hover:text-blue-800 flex items-center mt-5">
-                  Get Directions
-                </a>
-                <a href="#" className="text-red-600 hover:text-red-800 flex items-center mt-5 ml-2">
-                  More Info
-                </a>
-              </span>
-            </div>
-          ))}
+  <div key={store.properties.name} className="bg-white p-5 rounded-lg w-full h-fit border-slate-400 border-opacity-50 mb-2 shadow-md">
+    <div className="flex justify-between">
+      <span
+        className="font-semibold text-lg cursor-pointer hover:text-black text-slate-600"
+        onClick={() =>
+          onSelect({
+            longitude: store.geometry.coordinates[0],
+            latitude: store.geometry.coordinates[1],
+          })
+        }
+      >
+        {store.properties.name}
+      </span>
+      <div className="font-semibold flex flex-row items-center text-[#24963F] hover:scale-105">
+        <span className="m-1">4.5</span>
+        <AiFillStar className="" />
+      </div>
+    </div>
+    <div className="text-base text-slate-500">
+      {store.properties.address}
+    </div>
+    <div className="text-sm font-medium text-slate-500">
+      {distances[store.properties.name]} km away from your location
+    </div>
+    <span className="flex">
+      <a className="text-blue-600 hover:text-blue-800 flex items-center mt-5">
+        Get Directions
+      </a>
+      <a href="#" className="text-red-600 hover:text-red-800 flex items-center mt-5 ml-2">
+        More Info
+      </a>
+    </span>
+  </div>
+))}
         </div>
         <div className="bg-slate-700 w-2/3 p-2">
           <div className="w-full h-full">
